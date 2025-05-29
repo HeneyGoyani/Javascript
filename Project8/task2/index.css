@@ -1,0 +1,26 @@
+body
+{
+    align-items: center;
+    min-height: 90vh;
+    background: #020d12;
+    background: linear-gradient(90deg, rgba(2, 13, 18, 1) 0%, rgba(47, 105, 71, 1) 50%, rgba(2, 13, 18, 1) 100%);    display: flex;
+    flex-direction: column;
+}
+
+.slider
+{
+    position: relative;
+    display: flex;
+    align-items: center;  
+    flex-direction: column;
+}
+
+.image img{
+    width: 600px;
+    height:600px;
+}
+.image {
+   color: white ;
+   text-decoration:underline;
+   text-decoration-color: rgb(194, 193, 192);
+}
