@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="index.css"/>
+
+</head>
+
+<body>
+  <div class="container">
+    <aside class="form-section">
+      <h2>Task Manager</h2>
+      <form id="task-form">
+        <label>Title
+          <input type="text" id="task-title" placeholder="Display title..." required />
+        </label>
+
+        <label>Description
+          <textarea id="task-description" placeholder="Description..." required></textarea>
+        </label>
+
+        <label>Priority
+          <select id="task-priority">
+            <option value="low">Low 🟢</option>
+            <option value="medium">Medium 🟡</option>
+            <option value="high">High 🔴</option>
+          </select>
+        </label>
+
+        <label>Due Date
+          <input type="date" id="task-due-date" />
+        </label>
+
+        <button type="submit" class="btn">Save Task</button>
+      </form>
+    </aside>
+
+    <main class="task-section">
+      <h2>Your Tasks</h2>
+      <p id="empty-msg">No tasks added yet.</p>
+      <ul class="task-list -list-group"></ul>
+      <p id="task-counter" class="counter"></p>
+    </main>
+  </div>
+    <script src="index.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</body>
+
+
+
+</html>

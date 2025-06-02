@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #faece8;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  max-width: 1100px;
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+  width: 35%;
+  background-color: #fab7a7;
+  color: #fff;
+  padding: 32px;
+}
+
+.form-section h2 {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+}
+
+ input,
+textarea,
+select {
+  width: 100%;
+  padding: 9px;
+  margin-top: 4px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid #92b0ff;
+}
+
+.btn {
+  width: 100%;
+  padding: 13px;
+  background-color: #f17971;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e78079;
+}
+
+.task-section {
+  width: 65%;
+  padding: 32px;
+}
+
+.task-section h2 {
+  margin-bottom: 16px;
+  color: #e29f9f;
+}
+
+.task-list {
+  list-style: none;
+}
+
+.task-item {
+  background: #f7f9fb;
+  border-left: 5px solid #ccc;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.task-item.completed {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+.task-item.low {
+  border-left-color: #4caf50;
+}
+
+.task-item.medium {
+  border-left-color: #ffc107;
+}
+
+.task-item.high {
+  border-left-color: #f44336;
+}
+
+.task-item h4 {
+  margin-bottom: 5px;
+}
+
+.task-item p {
+  margin: 4px 0;
+}
+
+.task-item .controls {
+  margin-top: 8px;
+}
+
+.task-item .controls button {
+  margin-right: 8px;
+  padding: 6px 9px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.controls .complete {
+  background-color: #4caf50;
+  color: white;
+}
+
+.controls .edit {
+  background-color: #ffc107;
+}
+
+.controls .delete {
+  background-color: #f44336;
+  color: white;
+}
+
+.counter {
+  margin-top: 16px;
+  font-style: italic;
+  color: #555;
+}
+
+#empty-msg {
+  color: #999;
+  font-style: italic;
+}
